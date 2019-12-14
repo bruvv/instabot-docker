@@ -24,7 +24,7 @@ COPY ./start-instabot.sh /app/start-instabot.sh
 RUN chmod a+x /app/start-instabot.sh
 
 # Copy our own config here
-COPY ./config/instabot.config.yml /app/config/instabot.config.yml
+#COPY ./config/instabot.config.yml /app/config/instabot.config.yml
 RUN ln -sf /app/config/instabot.config.yml /app/instabot.config.yml
 
 # Define environment variable
