@@ -20,6 +20,7 @@ COPY --from=build-env /app/build ./instabot.py
 
 # This is the magic
 RUN python -m pip install ./instabot.py
+RUN python -m pip install python-telegram-handler
 COPY ./start-instabot.sh /app/start-instabot.sh
 RUN chmod a+x /app/start-instabot.sh
 
