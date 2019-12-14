@@ -12,7 +12,7 @@ RUN git clone https://github.com/instabot-py/instabot.py.git build
 RUN rm -rf build/.git
 
 # Build runtime image
-FROM python:3.7-slim
+FROM python:3.6-alpine
 WORKDIR /app
 
 # Copy from build image
