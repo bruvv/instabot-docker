@@ -9,7 +9,7 @@ RUN git clone https://github.com/instabot-py/instabot.py.git build
 
 # Checkout instabot version 0.5.12
 #RUN cd build && git pull && git checkout e1eae1171a21494fd80cc43c3d70d3ba3270c0a1
-RUN rm -rf build/.git
+#RUN rm -rf build/.git
 
 # Build runtime image
 FROM python:3.6-alpine
